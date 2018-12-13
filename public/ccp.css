@@ -31,10 +31,16 @@
     background-image: url('/img/icons/speaker.png');
 }
 
-div.jumbotron{
+div.jumbotron-base {
+    height: 200px;
+    background: url(/img/hk01.jpg);
+    background-position: center;
+    background-size: cover;
+} 
+div.jumbotron-index{
     background: url(/img/HK.fw.png);
 } 
-div.jumbotron hr{
+div.jumbotron-index hr{
     border-top:3px solid #CCCCCC
 }
 
