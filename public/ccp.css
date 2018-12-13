@@ -37,3 +37,7 @@ div.jumbotron{
 div.jumbotron hr{
     border-top:3px solid #CCCCCC
 }
+
+* {
+    font-family: helvetica;
+}
