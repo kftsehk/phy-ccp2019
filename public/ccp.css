@@ -34,3 +34,6 @@
 div.jumbotron{
     background: url(/img/HK.fw.png);
 } 
+div.jumbotron hr{
+    border-top:3px solid #CCCCCC
+}
