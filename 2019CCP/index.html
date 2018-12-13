@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CPP2019_Organization</title>
+    <link rel="stylesheet" href="ccp.css">
+</head>
+<style>
+    .box {
+        width: 100%;
+        background:white;
+    }
+    .header {
+        width: 100%;
+        height: 100px;
+        background-color:rgb(36, 34, 34);
+        /* background:  #3b2b75; */
+    }
+    .imgbox {
+        background:url('HK.jpg') no-repeat;
+        /* background: url(../img/botton.png) no-repeat; */
+        background-size:100% 100%;  
+        height: 500px;
+        padding-top: 3px;
+        padding-right: 20px;
+    }
+    .content {
+        display: flex;
+        /* width: 1280px; */
+        margin: 0px;
+        height: 2200px;
+        margin-top: 50px
+    }
+    .left {
+        width: 800px;
+        height: 1800px;
+        margin-right: 50px;
+        border-radius: 10px;
+        background: white;
+        padding-top: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-left: 130px;
+    }
+    .right {
+        width: 350px;
+        height: 500px;
+    }
+    .righttop {
+        width: 100%;
+        height: 300px;
+        border-radius: 10px;
+        margin-bottom: 50px;
+        background: white
+    }
+    .rightmid_1{
+        width: 100%;
+        height: 300px;
+        border-radius: 10px;
+        margin-bottom: 50px;
+        background: white   
+    }
+
+    .rightmid_2{
+        width: 100%;
+        height: 900px;
+        margin-bottom: 50px;
+        border-radius: 10px;
+        background: white   
+    }
+    .rightbottom_1 {
+        width: 100%;
+        height: 300px;
+        border-radius: 10px;
+        margin-bottom: 50px;
+        background: white
+    }
+    .rightbottom_2 {
+        width: 100%;
+        height: 300px;
+        border-radius: 10px;
+        margin-bottom: 50px;
+        background: white
+    }
+    .rightbottom_3 {
+        width: 100%;
+        height: 300px;
+        border-radius: 10px;
+        /* margin-bottom: 50px; */
+        background: white
+    }
+    .footer {
+        width: 100%;
+        background:rgb(36, 34, 34);
+        /* margin: 0 auto; */
+        height: 60px;
+    }
+    .header_content{
+        height:50px;
+        background-color: rgb(36, 34, 34);
+        background-size: 100% 100%;
+    }
+
+    a{
+        color:azure;
+        text-decoration: none;
+    }
+    a.link_title:hover{
+        color:yellow;
+    }
+    .mid_right{
+        width: 570px;
+        display: inline-block;
+        height: 800px; 
+        margin-right:110px;
+        /* margin-left: 100px; */
+        margin-top: 50px;
+        border-radius: 10px;
+        background: white;
+        /* padding-top: 50px; */
+        padding-left: 0px;
+        padding-right: 60px;
+        margin-left: 10px;
+        background-color: white;
+        margin-bottom: 50px;
+        float:right;
+    }
+    .mid_left {
+        background-color: white;
+        width: 570px;
+        display: inline-block;
+        height: 800px;
+        margin-right: 10px;
+        /* margin-left: 100px; */
+        margin-top: 50px;
+        border-radius: 10px;
+        /* padding-top: 50px; */
+        padding-left: 50px;
+        padding-right: 0px;
+        margin-left: 110px;
+        margin-bottom: 50px;
+    }
+
+    .mid_left_top{
+        background-color: white;
+        height:360px;
+        margin-bottom: 60px;
+        /* padding-top: 60px; */
+    }
+    .mid_left_mid{
+        background-color: white;
+        height:360px;
+        margin-bottom: 60px;
+        /* padding-top: 60px; */
+    }
+    .mid_right_top{
+        background-color: white;
+        height:360px;
+        margin-bottom: 60px;
+    }
+    .mid_right_mid{
+        background-color: white;
+        height:360px;
+        margin-bottom: 60px;
+        /* padding-top: 60px; */
+    }
+    .bottom{
+        
+        /* margin: 0px 100px; */
+        height: 300px;
+        background-color:rgb(36, 34, 34);
+    }
+    .mid_bottom{
+        position: relative;
+        width: 1240px;
+        margin-left: 110px;
+        margin-right: 110px;
+        height: 280px;
+        /* background-color: red; */
+        padding-bottom: 60px;
+    }
+    .bottom_left_01{
+        position: absolute;
+        left:0px;
+        top:0px;
+        width: 290px;
+        padding-left: 50px;
+        height: 200px;
+        /* background-color:white; */
+        padding-right: 30px;
+    }
+    .bottom_left_02{
+        position: absolute;
+        left:290px;
+        top:0px;
+        width: 290px;
+        padding-left: 50px;
+        height: 200px;
+        /* background-color:white; */
+        padding-right: 30px;
+    }
+    .bottom_right_02{
+        position: absolute;
+        left:580px;
+        top:0px;
+        width: 290px;
+        padding-left: 50px;
+        height: 200px;
+        /* background-color:white; */
+        padding-right: 30px;
+    }
+    .bottom_right_01{
+        position: absolute;
+        left:870px;
+        top:0px;
+        width: 290px;
+        padding-left: 50px;
+        height: 200px;
+        /* background-color:white; */
+        padding-right: 30px;
+    }
+    .btn{
+        float: right;
+        display: inline-block;
+        /* margin-right: 20px; */
+        background-color: #4CAF50;
+     border: none;
+     /* color: white; */
+     padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+     font-size: 16px;
+     margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    color: black;
+     /* border: 1px solid #555555;     */
+    }
+    /* .btn:hover{
+        background-color: #3e8e41;
+    } */
+</style>
+
+<body>
+    <div class="box">
+        <div class="header">
+            <!-- <img src="HK_logo.png" alt="PSHK_logo" class="logo"> -->
+            <span class="title">CCP2019</span><br>
+            <span class="title_2">31st IUPAP conference on Computational Physics</span>
+            <!-- <p class="logo"></p> -->
+        </div>
+        <div class="imgbox">
+            <button type="button" class="btn" style="vertical-align:middle" ><a class="case_1">Hong Kong Travel</a></button>
+            <button type="button" class="btn" style="vertical-align:middle" ><a class="case_1">Registration</a></button>
+        </div>
+        <div class="header_content">
+            <ul class="header_ul" style="overflow:hidden;margin-left: 200px;">
+                <li class="header_li">
+                    <a href="index.html" class="home link_title">Home</a>
+                </li>
+                <li class="header_li">
+                    <a href="Organization.html" class="people link_title">Organization</a>
+                </li>
+                <li class="header_li">
+                    <a href="Venue.html" class="venue link_title">Venue</a>
+                </li>
+                <li class="header_li">
+                    <a href="History.html" class="history link_title">History</a>
+                </li>
+                <li class="header_li">
+                    <a href="Registration.html" class="regis link_title">Registration</a>
+                </li>
+                <li class="header_li">
+                    <a href="" class="speaker link_title">Speakers</a>
+                </li>
+                <li class="header_li">
+                    <a href="Program.html" class="program link_title">Program</a>
+                </li>
+            </ul>
+        </div>
+        <div class="mid_left">
+            <div class="mid_left_top">
+                <span class="title_font" style="color:rgb(140, 62, 212);margin-left: 10px;font-size: 30px;"><strong>Welcome
+                        to CCP2019 Homepage!</strong></span>
+                <br><br>
+                <span class="text_font_3" style="color:rgb(6, 187, 127); line-height: 30px;font-size: 20px; padding-left: 20px;height: 60px;">31st
+                    IUPAP Conference on Computational Physics in 2019</span>
+                <br><span class="text_font_3" style="color:rgb(159, 165, 163); line-height: 30px; padding-left: 20px;">The
+                    CCP series dates back to a conference held in Boston in 1989, which evolved into the annual EPS-APS
+                    joint conferences Physics Computing (PC). In 1997 this series was reorganized and renamed as the
+                    Conference on Computational Physics (CCP).</span>
+                <span class="text_font_3" style="color:rgb(6, 187, 127); line-height: 30px;font-size: 20px; padding-left: 50px;;height: 30px;">1st
+                    Aug. 2019 in The Chinese University of Hong Kong</span><br>
+                <span class="text_font_3" style="color:rgb(6, 187, 127); line-height: 30px;font-size: 20px; padding-left: 250px;height: 40px;">Shatin,
+                    Hong Kong, China </span>
+                <hr>
+            </div>
+
+            <div class="mid left_mid">
+                <img src="phys_building.jpg" alt="homepage_pic" style="height:350px;width: 500px;margin-left: 30px;">
+            </div>
+
+
+        </div>
+        <div class="mid_right">
+            <div class="mid_right_top">
+                <img src="cuhk_schoolgate.jpg" alt="homepage_pic" style="height:350px;width: 500px;">
+            </div>
+            <div class="mid_right_mid">
+
+                <span class="title_font" style="color:rgb(140, 62, 212);margin-left: 10px;font-size: 30px;"><strong>Welcome
+                        to CCP2019 Homepage!</strong></span>
+                <br><br>
+                <span class="text_font_3" style="color:rgb(6, 187, 127); line-height: 30px;font-size: 20px; padding-left: 20px;height: 60px;">31st
+                    IUPAP Conference on Computational Physics in 2019</span>
+                <br><span class="text_font_3" style="color:rgb(159, 165, 163); line-height: 30px; padding-left: 20px;">The
+                    CCP series dates back to a conference held in Boston in 1989, which evolved into the annual EPS-APS
+                    joint conferences Physics Computing (PC). In 1997 this series was reorganized and renamed as the
+                    Conference on Computational Physics (CCP).</span>
+                <span class="text_font_3" style="color:rgb(6, 187, 127); line-height: 30px;font-size: 20px; padding-left: 50px;;height: 30px;">1st
+                    Aug. 2019 in The Chinese University of Hong Kong</span><br>
+                <span class="text_font_3" style="color:rgb(6, 187, 127); line-height: 30px;font-size: 20px; padding-left: 250px;height: 40px;">Shatin,
+                    Hong Kong, China </span>
+                <hr>
+            </div>
+        </div>
+        <!-- bottom text -->
+        <div class="bottom">
+            <div class="mid_bottom">
+                <div class="bottom_left_01"></div>
+                <div class="bottom_left_02"></div>
+                <div class="bottom_right_02"></div>
+                <div class="bottom_right_01"></div>
+            </div>
+
+        </div>
+        <div class="footer"></div>
+
+</body>
+
+</html>
