@@ -10,35 +10,35 @@
     vertical-align: -50%;
 }
 .icon-book::before {    
-    background-image: url('/img/icons/book.png');
+    background-image: url('./img/icons/book.png');
 }
 .icon-home::before {    
-    background-image: url('/img/icons/home.png');
+    background-image: url('./img/icons/home.png');
 }
 .icon-location::before {    
-    background-image: url('/img/icons/location.png');
+    background-image: url('./img/icons/location.png');
 }
 .icon-people::before {    
-    background-image: url('/img/icons/people.png');
+    background-image: url('./img/icons/people.png');
 }
 .icon-program::before {    
-    background-image: url('/img/icons/program.png');
+    background-image: url('./img/icons/program.png');
 }
 .icon-regis::before {    
-    background-image: url('/img/icons/regis.png');
+    background-image: url('./img/icons/regis.png');
 }
 .icon-speaker::before {    
-    background-image: url('/img/icons/speaker.png');
+    background-image: url('./img/icons/speaker.png');
 }
 
 div.jumbotron-base {
     height: 200px;
-    background: url(/img/hk01.jpg);
+    background: url(./img/hk01.jpg);
     background-position: center;
     background-size: cover;
 } 
 div.jumbotron-index{
-    background: url(/img/HK.fw.png);
+    background: url(./img/HK.fw.png);
 } 
 div.jumbotron-index hr{
     border-top:3px solid #CCCCCC
