@@ -48,3 +48,12 @@ div.jumbotron-index hr{
     font-family: helvetica;
     font-size: 16px;
 }
+
+/* Add ul decoration & li hover style  */
+.text_ul{
+    list-style-type: square;
+}
+.text_li:hover{
+    background-color:rgb(243, 241, 241); 
+
+}
