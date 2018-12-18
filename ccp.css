@@ -31,6 +31,10 @@
     background-image: url('./img/icons/speaker.png');
 }
 
+button.btn-std-size {
+    width: 12rem
+}
+
 div.jumbotron-base {
     height: 200px;
     background: url(./img/ccp_pic.png);
