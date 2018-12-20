@@ -57,9 +57,12 @@ div.jumbotron-index hr{
 .text_ul{
     list-style-type: square;
 }
-.text_li:hover{
+.text_ul li:hover{
     background-color:rgb(243, 241, 241); 
+}
 
+.body {
+    font-family: helvetica;
 }
 
 .font-style1{
