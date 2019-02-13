@@ -21,4 +21,12 @@ function includeHTML() {
         // if (loaded) includeHTML();
     }
 }
-includeHTML();
+$(document).ready(
+  function(){
+    $.ajaxSetup ({
+      // Disable caching of AJAX responses
+      cache: false
+    });
+    includeHTML();
+  }
+)
